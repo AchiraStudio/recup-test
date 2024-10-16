@@ -1860,7 +1860,6 @@ transition: .4s;
 	z-index: 6;
 	right: 0;
 	rotate: 14deg;
-	animation: rotate 2.5s infinite;
 }
 
 .raissanb {
@@ -1870,7 +1869,6 @@ transition: .4s;
 	left: 0;
 	margin-left: 10%;
 	rotate: -14deg;
-	animation: rotate 2.5s infinite;
 	width: 300px;
 }
 
