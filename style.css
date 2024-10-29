@@ -1900,7 +1900,6 @@ transition: .4s;
 	z-index: 1000;
 }
 
-
 /* Card */
 /* Spotify music card made by: csozi | Website: www.csozi.hu*/
 
@@ -2116,3 +2115,169 @@ transition: .4s;
 	  transform: scaleY(0.1);
 	}
   }
+
+  #comps {
+	width: 100%;
+	min-height: 100vh;
+	background-color: white;
+	display: flex;
+}
+
+.left-segs {
+	min-height: 100vh;
+	width: 50%;
+	left: 0;
+	position: relative;
+}
+
+.right-segs {
+	min-height: 100vh;
+	width: 50%;
+	right: 0;
+	position: relative;
+}
+
+.segs {
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	position: relative;
+}
+
+.segs .text-seg {
+	z-index: 3;
+	width: 60%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	align-items: center;
+	box-shadow: 15px 14px 46px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 15px 14px 46px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 14px 46px 0px rgba(0,0,0,0.75);
+position: absolute;
+height: 100%;
+}
+
+/* Classes in segs */
+
+.esports .picture {
+	right: 0;
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	background: url(assets/esports.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.esports .text-seg {
+	background-color: #ce111188;
+	backdrop-filter: blur(15px);
+	/* Blurring effect */
+	-webkit-backdrop-filter: blur(15px);
+	/* Safari support */
+}
+
+.futsal .picture {
+	left: 0;
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	background: url(assets/futsal.JPG);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.futsal .text-seg {
+	background-color: #21ce1188;
+	backdrop-filter: blur(15px);
+	/* Blurring effect */
+	-webkit-backdrop-filter: blur(15px);
+	/* Safari support */
+	right: 0;
+}
+
+.basket-putra .picture {
+	right: 0;
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	background: url(assets/basket\ putra.JPG);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.basket-putra .text-seg {
+	background-color: #10a0e288;
+	backdrop-filter: blur(15px);
+	/* Blurring effect */
+	-webkit-backdrop-filter: blur(15px);
+	/* Safari support */
+}
+.basket-putri .picture {
+	left: 0;
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	background: url(assets/basket\ putri.JPG);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.basket-putri .text-seg {
+	background-color: #4a248688;
+	backdrop-filter: blur(15px);
+	/* Blurring effect */
+	-webkit-backdrop-filter: blur(15px);
+	/* Safari support */
+	right: 0;
+}
+
+.band .picture {
+	right: 0;
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	background: url(assets/band.JPG);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.band .text-seg {
+	background-color: #5a11ce88;
+	backdrop-filter: blur(15px);
+	/* Blurring effect */
+	-webkit-backdrop-filter: blur(15px);
+	/* Safari support */
+}
+
+.volley .picture {
+	left: 0;
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	background: url(assets/volley.JPG);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.volley .text-seg {
+	background-color: #59da2688;
+	backdrop-filter: blur(15px);
+	/* Blurring effect */
+	-webkit-backdrop-filter: blur(15px);
+	/* Safari support */
+	right: 0;
+}
+
+.merch {
+	width: 100%;
+	height: 100vh;
+	background-color: wheat;
+	position: relative;
+}
