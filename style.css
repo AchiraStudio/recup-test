@@ -244,7 +244,11 @@ nav h6 {
 	margin-top: 60%;
 	font-size: 11px;
 	color: #d6ccd5;
-	;
+	text-shadow: 
+        -1px -1px 0 #000,  /* Top-left shadow */
+         1px -1px 0 #000,  /* Top-right shadow */
+        -1px  1px 0 #000,  /* Bottom-left shadow */
+         1px  1px 0 #000;  /* Bottom-right shadow */
 }
 nav.active {
 	right: 0;
@@ -258,10 +262,16 @@ nav a {
 	-webkit-transition: .6s;
 	-o-transition: .6s;
 	transition: .6s;
+	text-shadow: 
+        -1px -1px 0 #000,  /* Top-left shadow */
+         1px -1px 0 #000,  /* Top-right shadow */
+        -1px  1px 0 #000,  /* Bottom-left shadow */
+         1px  1px 0 #000;  /* Bottom-right shadow */
 }
 nav a:hover {
 	color: black;
 	background-color: #ffffff49;
+	text-shadow: none;
 }
 .bottom-nav {
 	width: 100%;
@@ -820,6 +830,7 @@ nav a:hover {
 }
 /* Guidebook */
 .buttongb {
+	z-index: 15;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
@@ -1025,7 +1036,7 @@ nav a:hover {
 /* end */
 /* footer */
 #footer {
-	background: rgba(3,1,17,1);
+	background: #030111;
 	/* background: #1e1c1c;
 	*/
 	color: #fff;
@@ -1170,6 +1181,7 @@ nav a:hover {
 	/* end */
 
 	.artis {
+		position: relative;
 		height: 120vh;
 	}
 	.container-art {
@@ -1836,9 +1848,11 @@ transition: .4s;
 
 .top-top {
 	margin-bottom: 420px;
+	z-index: 2;
 }
 
 .down-down {
+	z-index: 1;
 	margin-top: 300px;
 	rotate: 180deg;
 	transform: rotateY(360deg);
@@ -1846,8 +1860,7 @@ transition: .4s;
 
 .border {
 	height: 210px;
-	z-index: 10;
-	background-color: #CECECE;
+	z-index: 5;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -1856,20 +1869,21 @@ transition: .4s;
 
 .rannb {
 	position: absolute;
-	margin-bottom: 530px;
+	margin-top: 3px;
 	z-index: 6;
 	right: 0;
 	rotate: 14deg;
+	width: 450px;
 }
 
 .raissanb {
 	position: absolute;
-	margin-bottom: 490px;
+	margin-top: 5px;
 	z-index: 6;
 	left: 0;
 	margin-left: 10%;
 	rotate: -14deg;
-	width: 300px;
+	width: 260px;
 }
 
 @keyframes rotate {
@@ -1904,7 +1918,7 @@ transition: .4s;
 /* Spotify music card made by: csozi | Website: www.csozi.hu*/
 
 .card {
-	margin-top: 250px;
+	margin-top: 450px;
 	position: absolute;
 	width: 450px;
 	height: 210px;
@@ -2116,14 +2130,53 @@ transition: .4s;
 	}
   }
 
+  .border1 {
+	padding-top: 200px;
+	background: linear-gradient(90deg, #FFCC00, #FF66CC, #6699FF, #9933FF, #66CCFF);
+  }
+
+  .border1 .top-top {
+	margin-bottom: 600px;
+  }
+
+  .border2 {
+	background-color: #CECECE;
+	height: 400px;
+  }
+
+  .border2 .down-down {
+	margin-top: 600px;
+  }
+
+  .border3 {
+	margin-bottom: 0;
+  }
+
+  .border3 svg {
+	z-index: 1;
+	position: absolute;
+	margin-top: 200px;
+  }
+
+  .filler {
+	background: linear-gradient(90deg, #FFCC00, #FF66CC, #6699FF, #9933FF, #66CCFF);
+	height: 400px;
+	width: 100vw;
+  }
+
   #comps {
 	width: 100%;
 	min-height: 100vh;
-	background-color: white;
+	background: url(assets/5896404.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	display: flex;
+	z-index: 11;
 }
 
 .left-segs {
+	background-color: transparent;
 	min-height: 100vh;
 	width: 50%;
 	left: 0;
@@ -2131,6 +2184,7 @@ transition: .4s;
 }
 
 .right-segs {
+	background-color: transparent;
 	min-height: 100vh;
 	width: 50%;
 	right: 0;
@@ -2142,6 +2196,7 @@ transition: .4s;
 	height: 40vh;
 	display: flex;
 	position: relative;
+	z-index: 10;
 }
 
 .segs .text-seg {
@@ -2174,7 +2229,7 @@ height: 100%;
 }
 
 .esports .text-seg {
-	background-color: #ce111188;
+	background-color: transparent;
 	backdrop-filter: blur(15px);
 	/* Blurring effect */
 	-webkit-backdrop-filter: blur(15px);
@@ -2193,7 +2248,7 @@ height: 100%;
 }
 
 .futsal .text-seg {
-	background-color: #21ce1188;
+	background-color: transparent;
 	backdrop-filter: blur(15px);
 	/* Blurring effect */
 	-webkit-backdrop-filter: blur(15px);
@@ -2213,7 +2268,7 @@ height: 100%;
 }
 
 .basket-putra .text-seg {
-	background-color: #10a0e288;
+	background-color: transparent;
 	backdrop-filter: blur(15px);
 	/* Blurring effect */
 	-webkit-backdrop-filter: blur(15px);
@@ -2230,7 +2285,7 @@ height: 100%;
 	background-repeat: no-repeat;
 }
 .basket-putri .text-seg {
-	background-color: #4a248688;
+	background-color: transparent;
 	backdrop-filter: blur(15px);
 	/* Blurring effect */
 	-webkit-backdrop-filter: blur(15px);
@@ -2249,7 +2304,7 @@ height: 100%;
 	background-repeat: no-repeat;
 }
 .band .text-seg {
-	background-color: #5a11ce88;
+	background-color: transparent;
 	backdrop-filter: blur(15px);
 	/* Blurring effect */
 	-webkit-backdrop-filter: blur(15px);
@@ -2267,7 +2322,7 @@ height: 100%;
 	background-repeat: no-repeat;
 }
 .volley .text-seg {
-	background-color: #59da2688;
+	background-color: transparent;
 	backdrop-filter: blur(15px);
 	/* Blurring effect */
 	-webkit-backdrop-filter: blur(15px);
@@ -2278,6 +2333,10 @@ height: 100%;
 .merch {
 	width: 100%;
 	height: 100vh;
-	background-color: wheat;
+	background: rgb(13,13,113);
+background: -moz-linear-gradient(180deg, rgba(13,13,113,1) 0%, rgba(3,1,17,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(13,13,113,1) 0%, rgba(3,1,17,1) 100%);
+background: linear-gradient(180deg, rgba(13,13,113,1) 0%, rgba(3,1,17,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d71",endColorstr="#030111",GradientType=1);
 	position: relative;
 }
