@@ -1120,6 +1120,7 @@ nav a:hover {
 	#games {
 		max-height: 40vh;
 	}
+
 }
 @media screen and (max-width: 769px) {
 	.palm-left {
@@ -2339,4 +2340,194 @@ background: -webkit-linear-gradient(180deg, rgba(13,13,113,1) 0%, rgba(3,1,17,1)
 background: linear-gradient(180deg, rgba(13,13,113,1) 0%, rgba(3,1,17,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d71",endColorstr="#030111",GradientType=1);
 	position: relative;
+}
+
+.title-merch {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 200px;
+	color: #3dff2b;
+	margin-bottom: 200px;
+	font-size: 20px;
+}
+
+.merch .contain-merch {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.merches {
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 200px;
+}
+
+.merches img {
+	width: 200px;
+	margin: 40px;
+}
+
+.coin1 {
+	position: absolute;
+	width: 600px;
+	left: 0;
+	top: 0;
+
+}
+
+.coin2 {
+	position: absolute;
+	width: 600px;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 300px;
+}
+
+.title-merch .btn-main {
+	background-image: -o-linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+	background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+	z-index: 6;
+}
+.title-merch .btn-main {
+	position: relative;
+	margin: 10px;
+	padding: 15px 30px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	background-size: 100% auto;
+	color: white;
+	border-radius: 10px;
+	display: block;
+	border: 0px;
+	font-size: 30px;
+	font-weight: 700;
+	-webkit-box-shadow: 0px 0px 14px -7px #f09819;
+	box-shadow: 0px 0px 14px -7px #f09819;
+	text-decoration: none;
+	z-index: 6;
+	transition: 0.5s;
+	border: 3px solid #000;
+}
+.title-merch .btn-main:hover {
+	-webkit-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	transform: scale(0.95);
+	z-index: 6;
+	background: rgb(250,139,19);
+	background: -webkit-gradient(linear, left top, right top, from(rgba(250,139,19,1)), to(rgba(85,91,180,1)));
+	background: -o-linear-gradient(left, rgba(250,139,19,1) 0%, rgba(85,91,180,1) 100%);
+	background: linear-gradient(90deg, rgba(250,139,19,1) 0%, rgba(85,91,180,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fa8b13",endColorstr="#555bb4",GradientType=1);
+}
+
+@media screen and (max-width: 1441px) {
+	.border3 svg {
+		margin-top: 50px;
+	}
+
+	.merches {
+		width: 40%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 200px;
+	}
+
+	.coin1 {
+		position: absolute;
+		width: 500px;
+		left: 0;
+		top: 0;
+	}
+
+	.ran {
+		background: url(artis/assets/ran-second.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	#games {
+		max-height: 40vh;
+	}
+	
+	.segs .text-seg {
+		z-index: 3;
+		width: 50%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: white;
+		align-items: center;
+		box-shadow: 15px 14px 46px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 15px 14px 46px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 15px 14px 46px 0px rgba(0,0,0,0.75);
+	position: absolute;
+	height: 100%;
+	font-size: 13px;
+	padding: 5px;
+	}
+
+	.segs .picture {
+		width: 50%;
+	}
+
+	.border3 svg {
+		margin-top: 10px;
+	}
+
+	.merches {
+		width: 55%;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		margin-bottom: 200px;
+	}
+
+	.merches img {
+		width: 150px;
+		margin: 40px;
+	}
+
+	.coin1 {		
+		width: 400px;
+	}
+
+	.coin2 {
+		width: 400px;
+	}
+
+	.title-merch {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 50px;
+		color: #3dff2b;
+		margin-bottom: 200px;
+		font-size: 15px;
+	}
+
+	.title-merch .btn-main {
+		font-size: 20px;
+	}
+
+	.ran {
+		background: url(artis/assets/ran-second.jpg);
+		background-position: -200px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }

@@ -46,6 +46,10 @@ function gotoHub() {
     window.location.href = "hub/hub.html"
 }
 
+function gotoig() {
+    window.location.href = "https://www.instagram.com/recisrevival?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+}
+
 function rpnet(){
     window.location.href = "https://reginapacis.sch.id/"
 }
