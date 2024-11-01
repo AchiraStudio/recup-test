@@ -2132,7 +2132,7 @@ transition: .4s;
   }
 
   .border1 {
-	padding-top: 200px;
+	padding-top: 35%;
 	background: linear-gradient(90deg, #FFCC00, #FF66CC, #6699FF, #9933FF, #66CCFF);
   }
 
@@ -2156,7 +2156,7 @@ transition: .4s;
   .border3 svg {
 	z-index: 1;
 	position: absolute;
-	margin-top: 200px;
+	margin-top: 5%;
   }
 
   .filler {
@@ -2201,6 +2201,7 @@ transition: .4s;
 }
 
 .segs .text-seg {
+	overflow-x: hidden;
 	z-index: 3;
 	width: 60%;
 	text-align: center;
@@ -2351,6 +2352,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d71",endCo
 	color: #3dff2b;
 	margin-bottom: 200px;
 	font-size: 20px;
+	z-index: 5;
 }
 
 .merch .contain-merch {
@@ -2364,7 +2366,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d71",endCo
 }
 
 .merches {
-	width: 30%;
+	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 200px;
@@ -2376,14 +2378,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d71",endCo
 }
 
 .coin1 {
+	z-index: 0;
 	position: absolute;
-	width: 600px;
+	width: 500px;
 	left: 0;
 	top: 0;
 
 }
 
 .coin2 {
+	z-index: 0;
 	position: absolute;
 	width: 600px;
 	right: 0;
