@@ -1,6 +1,6 @@
 /** Prefixed boyy*/
 @font-face {
-	font-family: Spring;
+	font-family: spring;
 	font-weight: 1 1000;
     font-style: normal;
 	src: url(fonts/Spring.ttf);
@@ -2641,6 +2641,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 	align-items: center;
 	flex-direction: column;
 	background-color: #CECECE;
+	transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  -moz-transition:all 0.5s ;
 }
 
 .artisan svg {
@@ -2650,6 +2654,110 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 	top: 0;
 	position: absolute;
 }
+
+.artisan .ancont {
+	border-radius: 10px;
+	width: 93%;
+	height: 60vh;
+	background-color: #CECECE;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.75);
+}
+
+.ancont .txt {
+	position: absolute;
+	bottom: 0;
+	height: 30%;
+	width: 100%;
+	background-color: #cecece29;
+	backdrop-filter: blur(5px);
+	/* Blurring effect */
+	-webkit-backdrop-filter: blur(5px);
+	/* Safari support */
+	transition: .4s;
+	box-shadow: 0px -41px 118px -33px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px -41px 118px -33px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -41px 118px -33px rgba(0,0,0,0.75);
+}
+
+.ancont:hover .txt {
+	height: 80%;
+}
+
+.ancont:hover {
+	background-size: 200%;
+	background-position: -110px;
+}
+
+.ancont:hover .preview {
+	display: none;
+}
+
+.ancont .preview {
+	text-align: center;
+}
+
+.ancont .preview h1 {
+	color: red;
+}
+
+.ancont .preview p {
+	color: white;
+}
+
+.ancont .legit-content {
+	display: none;
+}
+
+.ancont:hover .legit-content {
+	display: block;
+	text-align: center;
+}
+
+.ancont .legit-content h1 {
+	color: red;
+}
+
+.ancont .legit-content p {
+	font-size: 15px;
+	color: white;
+}
+
+.ancont{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.ranan {
+	transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  -moz-transition:all 0.5s ;
+	background-image: url(artis/assets/ranan.jpg);
+	background-position: -45px;
+	background-size: 150%;
+	background-repeat: no-repeat;
+	margin-top: 250px;
+}
+
+.raissa {
+	transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  -moz-transition:all 0.5s ;
+	background-image: url(artis/assets/raissaan.jpg);
+	background-position: center;
+	background-size: 150%;
+	background-repeat: no-repeat;
+}
+
+.raissa:hover {
+	background-position: center;
+}
+
 @media screen and (max-width: 1441px) {
 	.border3 svg {
 		margin-top: 50px;
