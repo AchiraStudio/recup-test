@@ -2962,6 +2962,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 }
 
 @media screen and (max-width: 431px) {
+
 	#comps {
 		display: none;
 	}
@@ -2979,6 +2980,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 	}
 
 	.merch {
+		height: 70vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -3040,5 +3042,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 	
 	.anview{
 		display: block;
+	}
+
+	.coin2 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.merches img {
+		height: 75px;
+		width: 75px;
 	}
 }
