@@ -39,7 +39,6 @@ body {
 
 .count h1{
 	font-family: ZingBG;
-	margin-right: 50%;
 	font-size: 60px;
 	text-align: center;
 	background: rgb(227,246,14);
@@ -52,8 +51,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 }
 
 .count p {
-	margin-right: 50%;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 }
 .text-container {
@@ -1146,6 +1144,14 @@ nav a:hover {
 }
 #minecraft {
 	width: 20px;
+}
+
+.pcview{
+	display: block;
+}
+
+.anview{
+	display: none;
 }
 * {
 	scroll-behavior: smooth;
@@ -2380,7 +2386,7 @@ height: 100%;
 .merch {
 	width: 100%;
 	height: 100vh;
-	background: rgb(13,13,113);
+	background: #0d0d71;
 background: -moz-linear-gradient(180deg, rgba(13,13,113,1) 0%, rgba(3,1,17,1) 100%);
 background: -webkit-linear-gradient(180deg, rgba(13,13,113,1) 0%, rgba(3,1,17,1) 100%);
 background: linear-gradient(180deg, rgba(13,13,113,1) 0%, rgba(3,1,17,1) 100%);
@@ -2468,6 +2474,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d71",endCo
 	transition: 0.5s;
 	border: 3px solid #000;
 }
+
 .title-merch .btn-main:hover {
 	-webkit-transform: scale(0.95);
 	-ms-transform: scale(0.95);
@@ -2743,7 +2750,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 	margin-top: 250px;
 }
 
-.raissa {
+.raissan {
 	transition:all 0.5s ;
   -webkit-transition:all 0.5s ;
   -o-transition:all 0.5s ;
@@ -2758,6 +2765,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 	background-position: center;
 }
 
+.bord {
+	position: absolute;
+	top: 0;
+}
 @media screen and (max-width: 1441px) {
 	.border3 svg {
 		margin-top: 50px;
@@ -2968,7 +2979,51 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 	}
 
 	.merch {
-		display: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.merch .contain-merch {
+		margin-top: 200px;
+		flex-direction: column;
+	}
+
+	.merches img {
+		height: 85px;
+		width: 85px;
+	}
+
+	.merch .merches {
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		height: 50%;
+		width: 100%;
+	}
+
+	.title-merch {
+		margin-left: 35%;
+		width: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 200px;
+		color: #3dff2b;
+		margin-bottom: 0;
+		font-size: 10px;
+		z-index: 5;
+	}
+
+	.bord {
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 200%;
+		overflow: hidden;
+		filter: drop-shadow(0px 40px 40px rgba(0, 0, 0, 0.3));
 	}
 
 	.ancomp {
@@ -2977,5 +3032,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 
 	.artisan {
 		display: flex;
+	}
+
+	.pcview{
+		display: none;
+	}
+	
+	.anview{
+		display: block;
 	}
 }
