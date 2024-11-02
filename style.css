@@ -1,9 +1,9 @@
 /** Prefixed boyy*/
 @font-face {
-	font-family: spring;
+	font-family: breety;
 	font-weight: 1 1000;
     font-style: normal;
-	src: url(fonts/Spring.ttf);
+	src: url(fonts/bretty-i.otf);
 }
 @font-face {
 	font-family: Poppins;
@@ -1813,7 +1813,7 @@ nav a:hover {
 }
 
 .artis h1 {
-	font-family: bretty;
+	font-family: breety;
 	color: red;
 }
 
@@ -2708,6 +2708,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 }
 
 .ancont .preview h1 {
+	font-family: breety;
 	color: red;
 }
 
@@ -2725,6 +2726,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3f60e",endCo
 }
 
 .ancont .legit-content h1 {
+	font-family: breety;
 	color: red;
 }
 
