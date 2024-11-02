@@ -46,10 +46,6 @@ function gotoHub() {
     window.location.href = "hub/hub.html"
 }
 
-function gotoig() {
-    window.location.href = "https://www.instagram.com/recisrevival?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-}
-
 function rpnet(){
     window.location.href = "https://reginapacis.sch.id/"
 }
@@ -61,6 +57,16 @@ function spotras(){
 function spotran(){
     window.location.href = "https://open.spotify.com/artist/5DSVjHy2YWufmRUHBM3PLX?si=oP_VvVzdTwK4QO6YUcIbng"
 }
+
+function sma() {
+    window.location.href = "https://forms.gle/fCyv1KQQBnHodp617"
+}
+
+function smp() {
+    window.location.href = "https://forms.gle/DE2o5twsLptX8udY6"
+}
+
+
 // Change Image
 
 document.addEventListener('DOMContentLoaded', () => {
